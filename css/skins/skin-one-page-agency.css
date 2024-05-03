@@ -1590,7 +1590,7 @@ html .btn-check:focus + .btn-quaternary {
 }
 
 html .btn-dark {
-	background-color: #212529;
+	background-color: #ffb347;
 	border-color: #212529 #212529 #0a0c0d;
 	color: #FFF;
 	--color: #212529;
@@ -6715,7 +6715,7 @@ html .call-to-action.call-to-action-primary {
 
 html .call-to-action.call-to-action-primary h3,
 html .call-to-action.call-to-action-primary p {
-	color: #FFF;
+	color: #0088cc;
 }
 
 html .call-to-action.featured.featured-secondary {
