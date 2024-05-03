@@ -151,7 +151,7 @@ body {
 		position: absolute;
 		top: 50%;
 		left: 0;
-		background-color: #CCC;
+		background-color: #0169fe;
 		width: 8px;
 		height: 8px;
 		border-radius: 100%;
@@ -163,7 +163,7 @@ body {
 		position: absolute;
 		top: 50%;
 		right: 0;
-		background-color: #CCC;
+		background-color: #0169fe;
 		width: 8px;
 		height: 8px;
 		border-radius: 100%;
@@ -243,7 +243,8 @@ body {
 		font-weight: 600;
 		letter-spacing: -0.5px;
 }
-
+/**
+ 
 @media (min-width: 992px) {
 		#header .header-nav-main nav > ul > li > a {
 				padding: 0 1.2rem !important;
@@ -251,9 +252,9 @@ body {
 		#header .header-nav-main nav > ul > li > a:before {
 				content: '';
 				position: absolute;
-				top: 50.7%;
+				top: 50%;
 				right: -5px;
-				background-color: #FFF !important;
+				background-color: #006ea6 !important;
 				width: 6px;
 				height: 6px;
 				border-radius: 100%;
@@ -264,6 +265,8 @@ body {
 		}
 }
 
+
+ */
 .custom-blockquote-style-1 {
 		position: relative;
 		border: 0;
