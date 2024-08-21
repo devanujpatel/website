@@ -46,10 +46,170 @@
     <link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
 
     <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="css/custom.css">
+    <!-- <link rel="stylesheet" href="css/custom.css"> -->
 
     <!-- Head Libs -->
     <script src="vendor/modernizr/modernizr.min.js"></script>
+
+    <!-- <script src="timeline_javascript.js"></script> -->
+    <style>
+        #wide-flip-div {
+            width: 140%;
+            margin-left: -38%;
+        }
+        
+    
+        @media (max-width: 1200px) {
+            #wide-flip-div {
+                width: 140%;
+                margin-left: -38%;
+            }
+        }
+    
+        @media (max-width: 992px) {
+            #wide-flip-div {
+                width: 150%;
+                margin-left: -15%;
+                margin-bottom: 5%;  
+            }
+        }
+    
+        @media (max-width: 768px) {
+            #wide-flip-div {
+                width: 130%;
+                margin-left: -15%;
+            }
+        }
+    
+        @media (max-width: 576px) {
+            #wide-flip-div {
+                width: 100%;
+                margin-left: 0%;
+                height: 60%;
+            }
+        }
+
+        #wide-flip-div-2 {
+            width: 140%;
+            margin-left: -38%;
+        }
+    
+        @media (max-width: 1200px) {
+            #wide-flip-div-2 {
+                width: 140%;
+                margin-left: -38%;
+            }
+        }
+    
+        @media (max-width: 992px) {
+            #wide-flip-div-2 {
+                width: 150%;
+                margin-left: -15%;
+                margin-bottom: 5%;  
+                height: 50%;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            #wide-flip-div-2 {
+                width: 130%;
+                margin-left: -15%;
+            }
+        }
+    
+        @media (max-width: 576px) {
+            #wide-flip-div-2 {
+                width: 100%;
+                margin-left: 0%;  
+                margin-top: 30%; 
+            }
+            #flipped-card { 
+                height: 250%;
+                margin-top: -150%;
+            }
+        }
+
+        #wide-flip-div-3 {
+            width: 230%;
+            margin-left: -35%;
+        }
+        
+        
+    
+        @media (max-width: 1200px) {
+            #wide-flip-div-3 {
+                width: 230%;
+                margin-left: -35%;
+            }
+        }
+    
+        @media (max-width: 992px) {
+            #wide-flip-div-3 {
+                width: 170%;
+                margin-left: -15%;  
+            }
+            #flipped-3 {
+                height: 140%;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            #wide-flip-div-3 {
+                width: 130%;
+                margin-left: -15%;
+            }
+        }
+    
+        @media (max-width: 576px) {
+            #wide-flip-div-3 {
+                width: 100%;
+                margin-left: 0%;
+                height: 100%;
+            }
+            #flipped-3 {
+                height: 280%;
+            }
+        }
+
+        #wide-flip-div-4 {
+            width: 90%;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+        
+    
+        @media (max-width: 1200px) {
+            #wide-flip-div-4 {
+                width: 100%;
+            }
+        }
+    
+        @media (max-width: 992px) {
+            #wide-flip-div-4 {
+                width: 150%; 
+                margin-top: 40%;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            #wide-flip-div-4 {
+                width: 200%;
+                margin-top: 80%;
+            }
+        }
+    
+        @media (max-width: 576px) {
+            #wide-flip-div-4 {
+                width: 100%;
+                margin-left: 0%;
+                margin-top: 280%;
+            }
+            #flipped-4 {
+                height: 150%;
+            }
+        }
+
+    </style>
 
 
 </head>
@@ -60,126 +220,874 @@
 
         <div class="container">
             <br>
-            <div class="card">
+            <div class="card" style="border: none;">
                 <div class="row g-0">
                     <div class="col-lg-4">
-                        <img src="imgdev/Dev_Patel.jpg" class="img-fluid rounded" alt="Dev Patel">
+                        <br>
+                        <img src="my_pic_bugs_tshirt.jpeg" class="img-fluid rounded" alt="Dev Patel">
+                        <p style="font-size: 1.3em; margin-top: 10px; padding: 10   px;">Fun fact about me: I have a 800+ day streak on Duolingo</p>
                     </div>
-
+                    
                     <div class="col-lg-8">
                         <div class="card-body">
-
                             <h2 class="font-weight-semi-bold text-7 line-height-2 appear-animation"
                                 data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500"><span
                                     class="text-5">Hi, I am Dev Patel</span></h2>
                             <h2 class="word-rotator font-weight-semi-bold letters scale mb-2">
-											<span class="word-rotator-words">
-												<b class="is-visible text-color-primary">Freshman.UMD.CS & ECON</b>
-												<b class="text-color-tertiary">Full.Stack.Developer</b>
-												<b class="text-color-secondary">Aspiring.Computer.Scientist</b>
-											</span>
+                                <span class="word-rotator-words">
+                                    <b class="is-visible text-color-primary">Sophomore.UMD.CS</b>
+                                    <b class="text-color-tertiary">Backend.Developer</b>
+                                    <b class="text-color-secondary">Curious.Explorer</b>
+                                </span>
                             </h2>
                             <a href="https://github.com/devanujpatel" target="_blank"
                                class="btn btn-outline btn-rounded btn-quaternary  btn-with-arrow mb-2">GitHub<span><i
                                     class="fas fa-chevron-right"></i></span></a>
-
-                            <a href="https://www.linkedin.com/in/dev-the-dev/" target="_blank"
+    
+                            <a href="https://www.linkedin.com/in/devanujpatel/" target="_blank"
                                class="btn btn-outline btn-rounded btn-primary  btn-with-arrow mb-2">LinkedIn<span><i
                                     class="fas fa-chevron-right"></i></span></a>
-
+    
                             <a href="https://leetcode.com/1909devpatel/" target="_blank"
                                class="btn btn-outline btn-rounded btn-tertiary  btn-with-arrow mb-2">Leetcode<span><i
                                     class="fas fa-chevron-right"></i></span></a>
-
-                            <a href="mailto:devpatel@terpmail.umd.edu"
+    
+                            <!-- <a href="mailto:devpatel@terpmail.umd.edu"
                                class="btn btn-outline btn-rounded btn-secondary  btn-with-arrow mb-2"
-                               href="#">Email<span><i class="fas fa-chevron-right"></i></span></a>
+                               href="#">Email<span><i class="fas fa-chevron-right"></i></span></a> -->
 
+                               <a href="#" class="btn btn-outline btn-rounded btn-secondary btn-with-arrow mb-2" onclick="copyEmail()">
+                                Copy Email<span><i class="fas fa-chevron-right"></i></span>
+                            </a>
+                        
+                            <!-- JavaScript to Copy Email and Show Dialog -->
+                            <script>
+                                function copyEmail() {
+                                    // The email to be copied
+                                    const email = "devpatel@terpmail.umd.edu";
+                                    
+                                    // Create a temporary input element
+                                    const tempInput = document.createElement("input");
+                                    tempInput.value = email;
+                                    
+                                    // Add it to the document and select the text
+                                    document.body.appendChild(tempInput);
+                                    tempInput.select();
+                                    tempInput.setSelectionRange(0, 99999); // For mobile devices
+                                    
+                                    // Copy the text inside the input to the clipboard
+                                    document.execCommand("copy");
+                                    
+                                    // Remove the temporary input element
+                                    document.body.removeChild(tempInput);
+                                    
+                                    // Show a dialog box with the email
+                                    alert("Email address copied to clipboard:\n\n" + email);
+                                }
+                            </script>
+    
                             <br>
-                            <p class="lead text-4 pt-2 font-weight-normal" class="mb-0" align="left"
+                            <p class="lead text-4 pt-2 font-weight-normal mb-0" align="left"
                                style="color:black">
-                                I started my tech journey by building a drone. The first memorable event in my life (as
-                                a 9th grader) was competing at the CBSE National Level Science Exhibition.
-                                I had built a robotic arm tailored to clean sewers (to tackle the menace of manual
-                                scavenging). Then I got into the web of programming. I started by teaching myself
-                                Python.
-                                I find it fun and exciting to code and develop something meaningful. I like to submerge
-                                myself into hours of learning, doing, and improving.
-                                In my high school I strived to establish a balance between the hours
-                                of school-study and coding.
-                                I am currently a Freshman at UMD studying Computer Science and Economics.
-                                I like to design applications which have a real-world impact on people's lives and
-                                problems, allowing them to solve issues and work efficiently.
-                                I dream of exploring and reaching the frontiers of new technology developments and being
-                                a part of path breaking research and innovation.
-                            </p>
+                               I’m a self-taught programmer with five years of experience. Currently, I’m a Software Development Research Assistant at UMD's Lavender Lab, where I automate day-to-day lab tasks. So far, my automations have helped save the lab 50 hours of manual work each week. Over the summer of 2024, I engineered an automated system on Microsoft Azure that streamlined the distribution of multiple linked surveys to over 10,000 participants across seven time zones.
+                                I am also the creator of an Android App named VacciSafe. It is hosted on Google Play Store and is currently helping 100+ parents keep track of their kids’ vaccine schedule.
+                                I’m actively seeking a summer 2025 tech internship where I can leverage my backend development skills and passion for impactful technology.
 
+                            </p>
+    
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <br>
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <h4 class="text-center" style="font-size: 2.5em; margin-bottom: 20px;">At a glance</h4>
+            <div class="owl-carousel owl-theme show-nav-title show-nav-title-both-sides" data-plugin-options="{'items': 3, 'margin': 10, 'loop': false, 'nav': true, 'dots': false}">
+                
+                <div class="d-flex align-items-center justify-content-center w-100 h-100">
+                    <div class="card card-border card-border-bottom card-border-hover bg-color-light box-shadow-6 box-shadow-hover anim-hover-translate-top-10px transition-3ms w-100 h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title mb-1 text-4 font-weight-bold">VacciSafe</h4>
+                            <p class="mb-0" align="left" style="color:black">
+                                <a href="https://play.google.com/store/apps/details?id=devpatel.apps.vaccisafe&pcampaignid=web_share" target="_blank" style="font-size: 1.1em; color: gray; font-weight: 600; margin-left: 1%">
+                                    Android App on Google Play Store
+                                </a>
+                            </p>
+                            <p class="card-text">Helping 100+ parents keep track of their kids' vaccine schedule</p>
+                            <p class="card-text" style="margin-bottom: 25px;">Skills: Java, SQLite, Android</p>
+                        </div>         
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center w-100 h-100">
+                    <div class="card card-border card-border-bottom card-border-hover bg-color-light box-shadow-6 box-shadow-hover anim-hover-translate-top-10px transition-3ms w-100 h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title mb-1 text-4 font-weight-bold">Software Development Research Assistant</h4>
+                            <p class="mb-0" align="left" style="color:black">
+                                <a href="https://www.the-lavender-lab.com/" target="_blank" style="font-size: 1.1em; color: gray; font-weight: 600; margin-left: 1%">
+                                    Lavender Lab, UMD
+                                </a>
+                            </p>
+                            <p class="card-text">Engineered automations saving 50 hours of manual work each week</p>
+                            <p class="card-text">Skills: Python, SQL, Microsoft Azure</p>
+                        </div>         
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center w-100 h-100">
+                    <div class="card card-border card-border-bottom card-border-hover bg-color-light box-shadow-6 box-shadow-hover anim-hover-translate-top-10px transition-3ms w-100 h-100">
+                        <div class="card-body d-flex flex-column">
+                            <h4 class="card-title mb-1 text-4 font-weight-bold">Treasuer</h4>
+                            <p class="mb-0" align="left" style="color:black">
+                                <a href="https://terplink.umd.edu/organization/terrapin-cricket-club" target="_blank" style="font-size: 1.1em; color: gray; font-weight: 600; margin-left: 1%">
+                                    Club Cricket, UMD
+                                </a>
+                            </p>
+                            <p class="card-text">Managing $10,000 budget and tracking all financial transactions</p>
+                            <p class="card-text">Designed and executed fundraising strategies, increasing funds by 30%
+                            </p>
+                        </div>         
+                    </div>
+                </div>
+        </div>
+    </div>
+    
+    <section id="portfolio" class="section bg-transparent overflow-hidden border-0 m-0 pb-0">				
+
+        <div id="vaccisafe-link" class="container py-5 my-5">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="text-light bg-color-primary text-center">My Projects</h2>
+                </div>
+            </div>
+            
+            <div class="row mb-5 pb-3">
+                <div class="col-md-6 col-lg-6 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+                    <!-- <h4 class="mb-4" style="text-align: center;">VacciSafe</h4> -->
+                    <div class="card flip-card flip-card-3d text-center rounded-0">
+                        <div class="flip-front" style="position: relative; display: inline-block; padding: 0; margin: 0; position: relative; width: 100%;">
+                            <img src="vaccisafe project.png" alt="Background" style="display: block; width: 100%; height: auto; margin: 0; opacity: 0.;">
+                            <div class="flip-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; background-color: rgb(37, 150, 190, 0.8); padding: 10px; border-radius: 5px; width: 65%;">
+                                <h4 class="font-weight-bold" style="margin: 0; color: white;">
+                                    VacciSafe
+                                </h4>
+                                <p style="margin: 0; color: white;">
+                                    Hover to learn more
+                                </p>    
+                            </div>
+                        </div>
+                        <div class="flip-back d-flex flex-column justify-content-center align-items-center p-5" style="width:100%;">
+                            <div class="flip-content my-4 text-center">
+                                <h4 class="font-weight-bold mb-3">VacciSafe</h4>
+                                <span style="font-size: 1.3em; color: gray; font-weight: 600;">Feb. 2022 - Present</span>
+                                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.3em; margin-top: 0.5em;">Developed and actively maintain a <b>native Android app in Java</b>, hosted on the <a href="https://play.google.com/store/apps/details?id=devpatel.apps.vaccisafe&pcampaignid=web_share">Google Play Store</a>.</li>
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.3em">Helping <b>100+ parents</b> keep track of their kids’ vaccine schedule consisting of <b>more than 40 vaccines</b></li>
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.3em">Uses <b>SQLite</b> to store all data locally</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="card flip-card flip-card-3d text-center rounded-0">
+                        <div class="flip-front" style="position: relative; display: inline-block; padding: 0; margin: 0; position: relative; width: 100%;">
+                            <img src="ai tic tac toe project - Copy.png" alt="Background" style="display: block; width: 100%; height: auto; margin: 0; opacity: 0.;">
+                            <div class="flip-content" style="position: absolute; top:20%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; background-color: rgb(37, 150, 190, 0.8); padding: 10px; border-radius: 5px; width: 65%;">
+                                <h4 class="font-weight-bold" style="margin: 0; color: white;">
+                                    Unbeatable AI
+                                </h4>
+                                <p style="margin: 0; color: white;">
+                                    Hover to learn more
+                                </p>    
+                            </div>
+                        </div>
+                        <div class="flip-back d-flex flex-column justify-content-center align-items-center p-5" style="width:100%;">
+                            <div class="flip-content my-4 text-center">
+                                <h4 class="font-weight-bold mb-3">Tic Tac Toe AI</h4>
+                                <span style="font-size: 1.3em; color: gray; font-weight: 600;">March 2023</span>
+                                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;">Developed an AI-powered Tic Tac Toe player using the <b>Minimax algorithm</b>, enabling optimal decision-making</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <br>
+                    <div class="card flip-card flip-card-3d text-center rounded-0">
+                        <div class="flip-front" style="position: relative; display: inline-block; padding: 0; margin: 0; position: relative; width: 100%;">
+                            <img src="project_shopping copy.png" alt="Background" style="display: block; width: 100%; height: auto; margin: 0; opacity: 0.;">
+                            <div class="flip-content" style="position: absolute; top:20%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; background-color: rgb(37, 150, 190, 0.8); padding: 10px; border-radius: 5px; width: 65%;">
+                                <h4 class="font-weight-bold" style="margin: 0; color: white;">
+                                    Shopping Purchase Predictor
+                                </h4>
+                                <p style="margin: 0; color: white;">
+                                    Hover to learn more
+                                </p>    
+                            </div>
+                        </div>
+                        <div class="flip-back d-flex flex-column justify-content-center align-items-center p-5" style="width:100%;">
+                            <div class="flip-content my-4 text-center">
+                                <h4 class="font-weight-bold mb-3">Shopping Purchase Predictor</h4>
+                                <span style="font-size: 1.3em; color: gray; font-weight: 600;">April 2023</span>
+                                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;"><b>Developed a K-Nearest Neighbors model</b> to predict online shopping outcomes, achieving 84.61% accuracy.</li>
+                                    <!-- <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;">Developed a K-Nearest Neighbors model to predict online shopping outcomes, achieving 84.61% accuracy.</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    
+                </div>
+
+
+                
+                
+                
+
+                <div class="col-md-6 col-lg-6 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+                    <!-- <h4 class="mb-4 text-center">Citizen's heaven</h4> -->
+                    
+                    <div id="wide-flip-div-2" class="card flip-card flip-card-3d text-center rounded-0" <div class="card flip-card flip-card-3d text-center rounded-0">
+                        <div class="flip-front" style="position: relative; display: inline-block; padding: 0; margin: 0; position: relative; width: 100%; height: auto;">
+                            <img src="ml capstone project.png" alt="Background" style="display: block; width: 100%; height: auto; margin: 0; opacity: 0.;">
+                            <div class="flip-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; background-color: rgb(37, 150, 190, 0.8); padding: 10px; border-radius: 5px; width: 65%;">
+                                <h4 class="font-weight-bold" style="margin: 0; color: white;">
+                                    Machine Learning Capstone Project
+                                </h4>
+                                <p style="margin: 0; color: white;">
+                                    Hover to learn more
+                                </p>    
+                            </div>
+                        </div>
+                        <div id="flipped-card" class="flip-back d-flex flex-column justify-content-center align-items-center p-5" style="width: 100%;">
+                            <div class="flip-content my-4 text-center">
+                                <h4 class="font-weight-bold mb-3" style="margin: 10px;">Machine Learning Capstone Project</h4>
+                                <span style="font-size: 1.3em; color: gray; font-weight: 600;">July 2022</span>
+                                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                                    <li style="margin-bottom: 0.2em; text-indent: -1.5em; padding-left: 1.3em; margin-top: 0.3em;"><b>Lead my team of 5 developers</b> at Columbia University’s Summer Immersion Program towards successful completion of a <a href="https://github.com/devanujpatel/Columbia-Summer-Immersion-Program">machine learning project</a> for classifying the “grade” of a loan applicant</li>
+                                    <li style="margin-bottom: 0.2em; text-indent: -1.5em; padding-left: 1.3em">Implemented and compared multiple <b>machine learning models</b>, including <b>Decision Tree</b> (99.6% accuracy) and <b>Gradient Boosting</b> (98.7% accuracy)</li>
+                                    <li style="margin-bottom: 0.2em; text-indent: -1.5em; padding-left: 1.3em">Optimizing model performance through <b>Hyperparameter Tuning (RandomizedSearchCV and GridSearchCV)</b>.</li>
+                                    <li style="margin-bottom: 0.2em; text-indent: -1.5em; padding-left: 1.3em">Explored <b>Deep Learning using Keras and TensorFlow</b> beyong course requirements, constructing an Artificial Neural Network for <b>multi-class classification</b>.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div  id="wide-flip-div-3" class="card flip-card flip-card-3d text-center rounded-0">
+                        <div class="card flip-card flip-card-3d text-center rounded-0">
+                        <div class="flip-front" style="position: relative; display: inline-block; padding: 0; margin: 0; position: relative; width: 100%; height: auto;">
+                            <img src="project_traffic.png" alt="Background" style="display: block; width: 100%; height: auto; margin: 0; opacity: 0.;">
+                            <div class="flip-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; background-color: rgb(37, 150, 190, 0.8); padding: 10px; border-radius: 5px; width: 65%;">
+                                <h4 class="font-weight-bold" style="margin: 0; color: white;">
+                                    Traffic Sign Recognition
+                                </h4>
+                                <p style="margin: 0; color: white;">
+                                    Hover to learn more
+                                </p>    
+                            </div>
+                        </div>
+                        <div id="flipped-3" class="flip-back d-flex flex-column justify-content-center align-items-center p-5">
+                            <div class="flip-content my-4 text-center">
+                                <h4 class="font-weight-bold mb-3" style="margin: 10px;">Traffic Sign Recognition</h4>
+                                <span style="font-size: 1.3em; color: gray; font-weight: 600;">May 2023</span>
+                                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                                    <li style="margin-bottom: 0.2em; text-indent: -1.5em; padding-left: 1.3em">Implemented a Python-based traffic sign recognition system, integrating with a <b>custom-built neural network architecture</b> and achieving successful deployment of the trained model.</li>
+                                    <li style="margin-bottom: 0.2em; text-indent: -1.5em; padding-left: 1.3em; margin-top: 0.3em;">Developed a <b>convolutional neural network (CNN) model using TensorFlow and Keras</b> to classify traffic signs with <b>43 categories, achieving 95.35% accuracy</b> on the test set.</li>
+                                    <li style="margin-bottom: 0.2em; text-indent: -1.5em; padding-left: 1.3em">Preprocessed and augmented image data using <b>OpenCV</b>, including resizing and categorizing over 30,000 images for robust model training and evaluation.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <br>
+                    <div id="wide-flip-div" class="card flip-card flip-card-3d text-center rounded-0">
+                        <div class="flip-front">
+                            <img src="monopoly project 2.png" alt="Background" style="display: block; width: 100%; height: auto; margin: 0; opacity: 0.;">
+                            <div class="flip-content" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; background-color: rgb(37, 150, 190, 0.8); padding: 10px; border-radius: 5px; width: 65%;">
+                                <h4 class="font-weight-bold" style="margin: 0; color: white;">
+                                    Monopoly
+                                </h4>
+                                <p style="margin: 0; color: white;">
+                                    Hover to learn more
+                                </p>    
+                            </div>
+                        </div>
+                        <div class="flip-back d-flex flex-column justify-content-center align-items-center p-5" style="width: 100%;">
+                            <div class="flip-content my-4 text-center">
+                                <h4 class="font-weight-bold mb-3">Monopoly</h4>
+                                <span style="font-size: 1.3em; color: gray; font-weight: 600;">August - December 2020</span>
+                                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;">
+                                        Developed an online Monopoly game using <b>Python</b>, <b>socket</b> (Python Native Library), <b>Tkinter</b>, <b>threading</b> (Python Native Library) and applied concepts of <b>object-oriented programming (OOPS)</b>, <b>in-memory database</b>, and <b>concurrency</b>
+                                    </li>
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em;">
+                                        Features room-based multiplayer sessions, customizable tokens, dice play, property buying and renting, and money management
+                                    </li>                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                
+        </div>
+
+        <br>
+        
+        <!-- <div class="row mb-5 pb-3">
+            <div class="col-md-6 col-lg-6 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+                <h4 class="mb-4" style="text-align: center;">Power of centralized control for AI Regulation</h4>
+                <div class="card flip-card flip-card-3d text-center rounded-0">
+                    <div class="flip-front p-5">
+                        <div class="flip-content my-4">
+                            <h4 class="font-weight-bold text-color-primary text-4">Explore me to see how the AI Authority can creatively enhance regulation and allow governments to implement new AI policies with ease </h4>
+                            <p>Hover over me</p>    
+                        </div>
+                    </div>
+                    <div class="flip-back d-flex flex-column justify-content-center align-items-center p-5" style="height: 300px;">
+                        <div class="flip-content my-4 text-center">
+                            <h4 class="font-weight-bold mb-3">Yet another good thing</h4>
+                            <p class="mb-0">The AI authority can provide incentives to companies like: more compliant the company is, lesser regulations they get. As a result, companies will try to ace their regulatory checks to get less regulatory checks in the future. This also builds a relationship between companies and the authority which further propels regulation. Moreover, the centralized control offered by the AI Authority makes it very easy for the government to implement any new policy. For example, a future AI policy can be to strive for environment conscious AI development. With the AI Authority, this simply becomes another "check" the authority conducts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+
+            <div class="col-md-6 col-lg-6 mb-5 mb-lg-0 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+                <h4 class="mb-4 text-center">Societal Benefit and the President's order</h4>
+                <div class="card flip-card flip-card-3d text-center rounded-0">
+                    <div class="flip-front p-5">
+                        <div class="flip-content my-4">
+                            <h4 class="font-weight-bold text-color-primary text-4">Explore me to see how the AI Authority can fuel innovation, motivate developers, drive interdisciplinary research and improve societal impact of AI</h4>
+                            <p>Hover over me</p>    
+                        </div>
+                    </div>
+                    <div class="flip-back d-flex flex-column justify-content-center align-items-center p-5" style="height: 300px;">
+                        <div class="flip-content my-4 text-center">
+                            <h4 class="font-weight-bold mb-3">Yep one more good thing</h4>
+                            <p class="mb-0">By serving as a hub for expertise and best practices, the authority can motivate development of ethical AI. Moreover, it can facilitate interdisciplinary research by welcoming input from experts. <b>This encourages innovation.</b> Additionally, the authority can spearhead initiatives to address broader societal issues related to AI such as workforce displacement, inequality and digital divide. It can create channels for public engagement, invest in training programs and promote diversity and inclusion in AI. <a href="http://www.whitehouse.gov/briefing-room/presidential-actions/2023/10/30/executive-order-on-the-safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence/"><u>Similar arguments have also been voiced by President Biden.</u></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+            
+    </div>
+             -->
+    
+             <div  id="wide-flip-div-4" class="card flip-card flip-card-3d text-center rounded-0">
+                <div class="flip-front" style="position: relative; display: inline-block; padding: 0; margin: 0; position: relative; width: 100%; height: auto;">
+                    <img src="project questions.png" alt="Background" style="display: block; width: 100%; height: auto; margin: 0; opacity: 0.;">
+                    <div class="flip-content" style="position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: white; background-color: rgb(37, 150, 190, 0.8); padding: 10px; border-radius: 5px; width: 65%;">
+                        <h4 class="font-weight-bold" style="margin: 0; color: white;">
+                            Text-Based Search Engine using TF-IDF and Query Term Density
+                        </h4>
+                        <p style="margin: 0; color: white;">
+                            Hover to learn more
+                        </p>    
+                    </div>
+                </div>
+                <div id="flipped-4" class="flip-back d-flex flex-column justify-content-center align-items-center p-5" style="width: 100%;">
+                    <div class="flip-content my-4 text-center">
+                        <h4 class="font-weight-bold mb-3" style="margin: 10px;">Text-Based Search Engine using TF-IDF and Query Term Density</h4>
+                        <span style="font-size: 1.3em; color: gray; font-weight: 600;">May 2023</span>
+                        <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                            <li style="margin-bottom: 0.2em; text-indent: -1.5em; padding-left: 1.3em;">
+                                Developed a <b>TF-IDF</b> based search engine to identify and rank relevant documents and sentences in response to user queries.
+                            </li>
+                            <li style="margin-bottom: 0.2em; text-indent: -1.5em; padding-left: 1.3em; margin-top: 0.3em;">
+                                Implemented algorithms for document <b>tokenization</b>, <b>IDF computation</b>, and <b>query term density analysis</b> to enhance search accuracy.
+                            </li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        
+    </section>
+
+    
 
     <div id="examples" class="container py-2">
-
-        <!-- 			<br>
-                        <h4>About Me</h4>
-
-                        <section class="call-to-action with-full-borders mb-5">
-
-                            <div>
-                                <div class="call-to-action-content">
-
-                                    <p class="mb-0" align="left" style="color:black">
-                                        I started my tech journey by building a drone. The first memorable event in my life (as a 9th grader) was competing at the CBSE National Level Science Exhibition.
-                                        I had built a robotic arm tailored to clean sewers (to tackle the menace of manual scavenging). Then I got into the web of programming. I started by teaching myself Python.
-                                        I find it fun and exciting to code and develop something meaningful. I like to submerge myself into hours of learning, doing, and improving.
-                                        I am currently a High School Senior and strive to establish a balance between the hours of school-study and coding.
-                                        I like to design applications which have a real-world impact on people's lives and problems, allowing them to solve issues and work efficiently.
-                                        I dream of exploring and reaching the frontiers of new technology developments and being a part of path breaking research and innovation.</p>
-                                </div>
-                            </div>
-                        </section>
-         -->
-
         <br>
-        <h4>Experience</h4>
+        <h4 style="font-size: 2.4em; ">Experience</h4>
+        
+        
 
-        <section class="call-to-action featured featured-quaternary mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">		
+                    <div class="timeline-box right custom-box-shadow-2">
+                        
+                    </div>						
+
+                    <section class="timeline custom-timeline" id="timeline">
+                        <div class="timeline-body">
+
+                            <article class="timeline-box right custom-box-shadow-2">
+                                <div class="timeline-box-arrow"></div>
+                                <!-- <div class="row"> -->
+                                    
+                                    <div style="padding: 2%">
+                                        <div class="call-to-action-content">
+                                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                                <a href="javascript:void(0);" target="_blank" style="margin-left: 1%; pointer-events: none; font-size: 1.6em;"><b>Software Development Research Assistant</b></a>
+                                                <span style="font-size: 1.3em; color: gray; font-weight: 600;">Jan. 2024 - Present</span>
+                                            </div>
+                                            <p class="mb-0" align="left" style="color:black">
+                                                <a href="https://www.the-lavender-lab.com/" target="_blank" style="font-size: 1.1em; color: gray; font-weight: 600; margin-left: 1%">
+                                                    Lavender Lab | College Park, MD
+                                                </a>
+                                            </p>
+                                            <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                                                <li style="margin-top: 0.5em; margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                                    <b>Automating day-to-day lab tasks</b>, like longitudinal survey compliance tracking and payment processing via Tango APIs, <b>reducing manual workload by 32 hours per week</b> and improving overall lab efficiency.
+                                                </li>
+                                                <li style="margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                                <b>Spearheaded development</b> of an automated system for distributing multiple linked surveys, <b>reducing manual work by 24 hours per week</b>.
+                                                </li>
+                                                <li style="margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                                    Engineered backend in <b>Python</b> using <b>Azure Functions</b> and <b>Azure Communication Services</b> to schedule reminders across 7 time zones and host <b>custom APIs</b> to handle a <b>longitudinal study with 10,000+ participants</b>.
+                                                </li>
+                                                <li style="margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                                    Migrated lab data to <b>Azure SQL</b> and devised cross-platform user-friendly interfaces using <b>Kivy</b> for data manipulation, ensuring consistency and centralized access.
+                                                </li>
+                                                <li style="margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                                    Integrated <b>JavaScript</b> in <b>Qualtrics</b> survey platform for customizing survey behavior.
+                                                </li>                                                
+                                            </ul>
+                                        </div>
+                                    </div>
+                            </article>
+
+
+                            <article class="timeline-box right custom-box-shadow-2">
+                                <div class="timeline-box-arrow"></div>
+                                <!-- <div class="row"> -->
+                                    
+                                    <div style="padding: 2%">
+                                        <div class="call-to-action-content">
+                                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                                <a href="javascript:void(0);" target="_blank" style="margin-left: 1%; pointer-events: none; font-size: 1.6em;"><b>Flutter Engineer</b></a>
+                                                <span style="font-size: 1.3em; color: gray; font-weight: 600;">Sep. - Dec. 2023</span>
+                                            </div>
+                                            <p class="mb-0" align="left" style="color:black">
+                                                <a href="javascript:void(0);" target="_blank" style="font-size: 1.1em; color: gray; font-weight: 600; pointer-events: none; margin-left: 1%">
+                                                    App Dev Club and Praxis Engineering | College Park, MD
+                                                </a>
+                                            </p>
+                                            <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                                                <li style="margin-top: 0.5em; margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                                    Part of <b>multidisciplinary team</b> consisting of researchers, data scientists and UI/UX designers to build a <b>machine learning app in Flutter</b> to aid in research about users’ lifestyle
+                                                </li>
+                                                <li style="margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                                    Integrated <b>Google Maps API</b> for location based information gathering
+                                                </li>
+                                                <li style="margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                                    Developed <b>secure authentication using Firebase</b>
+                                                </li>
+                                                <li style="margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                                    Collaborated effectively within an <b>Agile framework</b>, participating in sprint planning, daily stand-ups, and iterative development cycles to deliver high-quality software on time
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                            </article>
+
+                            <article class="timeline-box right custom-box-shadow-2">
+                                <div class="timeline-box-arrow"></div>
+                                <!-- <div class="row"> -->
+                                    
+                                    <div style="padding: 2%">
+                                        <div class="call-to-action-content">
+                                            <div style="display: flex; justify-content: space-between; align-items: center;">
+                                                <a href="javascript:void(0);" target="_blank" style="margin-left: 1%; pointer-events: none; font-size: 1.6em;"><b>Tech Intern</b></a>
+                                                <span style="font-size: 1.3em; color: gray; font-weight: 600;">May - Jul 2022</span>
+                                            </div>
+                                            <p class="mb-0" align="left" style="color:black">
+                                                <a href="javascript:void(0);" target="_blank" style="font-size: 1.1em; color: gray; font-weight: 600; pointer-events: none; margin-left: 1%">
+                                                    Zero Integration Private Limited | Surat, India
+                                                </a>
+                                            </p>
+                                            <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                                                <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;">
+                                                    Developed a <b>responsive web app</b> for <b>vaccination status tracking</b>.
+                                                </li>
+                                                <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em;">
+                                                    Utilized <b>JavaScript</b> and <b>Bootstrap</b> for the front end, deployed a <b>Django server</b> with an <b>Oracle XE database</b>, and set up <b>secure Google authentication</b>.
+                                                </li>
+                                                <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em;">
+                                                    Expanded <a href="#vaccisafe-link">VacciSafe</a> to reach <b>iOS</b> and <b>desktop users</b>, increasing the user base by __% and <b>accessibility</b>.
+                                                </li>                                                
+                                            </ul>
+                                            
+                                            <br>
+                                            <div style="text-align: left;"> 
+                                                <a href="https://www.youtube.com/watch?v=IYvJw5xRmWI" target="_blank"
+                                                    class="btn btn-outline btn-rounded btn-quaternary btn-with-arrow mb-2">Internship Project
+                                                    Video<span><i class="fas fa-chevron-right"></i></span></a>
+                                                <a href="https://zerointegration.com/internship/vaccisafe" target="_blank"
+                                                    class="btn btn-outline btn-rounded btn-quaternary btn-with-arrow mb-2" style="margin-left: 10px;">Blog<span><i
+                                                    class="fas fa-chevron-right"></i></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </article>
+                            
+                            
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- <section class="call-to-action featured featured-quaternary mb-5">
             <div class="call-to-action-content">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <a href="javascript:void(0);" target="_blank" style="margin: 0; pointer-events: none; font-size: 1.6em;"><b>Flutter Engineer</b></a>
+                    <span style="font-size: 1.4em; color: gray; font-weight: 600;">September - December 2023</span>
+                </div>
                 <p class="mb-0" align="left" style="color:black">
-                    <a href="https://zerointegration.com" target="_blank"><b>Zero Integration Private Limited</b></a> -
-                    Internship Trainee (May 2022 - Jul 2022)<br>
-                    Responsive Web Development - Designed and created a responsive website using JavaScript and
-                    Bootstrap technologies, carried out systems analysis and database design, explored and deployed a
-                    Django server with Oracle XE database, set up secure Google authentication and logging mechanisms,
-                    and developed the responsive web pages.<br>
-                    <br>
+                    <a href="javascript:void(0);" target="_blank" style="font-size: 1.1em; color: gray; font-weight: 600; pointer-events: none;">
+                        App Dev Club and Praxis Engineering
+                    </a>
+                </p>
+                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                    <li style="margin-top: 0.5em; margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                        Part of multidisciplinary team consisting of researchers, data scientists and UI/UX designers to build a machine learning app in Flutter to aid in research about users’ lifestyle
+                    </li>
+                    <li style="margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                        Integrated Google Maps API for location based information gathering
+                    </li>
+                    <li style="margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                        Developed secure authentication using Firebase
+                    </li>
+                    <li style="margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                        Collaborated effectively within an Agile framework, participating in sprint planning, daily stand-ups, and iterative development cycles to deliver high-quality software on time
+                    </li>
+                </ul>
+            </div>
+        </section> -->
+
+
+        <!-- <section class="call-to-action featured featured-quaternary mb-5">
+            <div class="call-to-action-content">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <a href="javascript:void(0);" target="_blank" style="margin: 0; pointer-events: none; font-size: 1.7em;"><b>Tech Intern</b></a>
+                    <span style="font-size: 1.4em; color: gray;"><b>May 2022 - Jul 2022</b></span>
+                </div>
+                <p class="mb-0" align="left" style="color:black">
+                    <a href="https://zerointegration.com" target="_blank" style="font-size: 1.1em; color: gray;">
+                        <b>Zero Integration Private Limited</b>
+                    </a>
+                </p>
+                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;">Developed a responsive web app for vaccination status tracking using JavaScript and Bootstrap.</li>
+                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em">Deployed a Django server with Oracle XE database and set up secure Google authentication.</li>
+                </ul>
+                
+                <br>
+                <div style="text-align: left;"> 
                     <a href="https://www.youtube.com/watch?v=IYvJw5xRmWI" target="_blank"
-                       class="btn btn-outline btn-rounded btn-quaternary  btn-with-arrow mb-2">Internship Project
+                        class="btn btn-outline btn-rounded btn-quaternary btn-with-arrow mb-2">Internship Project
                         Video<span><i class="fas fa-chevron-right"></i></span></a>
                     <a href="https://zerointegration.com/internship/vaccisafe" target="_blank"
-                       class="btn btn-outline btn-rounded btn-quaternary  btn-with-arrow mb-2">Blog<span><i
-                            class="fas fa-chevron-right"></i></span></a>
-                </p>
+                        class="btn btn-outline btn-rounded btn-quaternary btn-with-arrow mb-2" style="margin-left: 10px;">Blog<span><i
+                        class="fas fa-chevron-right"></i></span></a>
+                </div>
             </div>
         </section>
-        <br>
 
         <section class="call-to-action featured featured-quaternary mb-5">
             <div class="call-to-action-content">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <a href="javascript:void(0);" target="_blank" style="margin: 0; pointer-events: none; font-size: 1.7em;"><b>Tech Intern</b></a>
+                    <span style="font-size: 1.4em; color: gray;"><b>May 2022 - Jul 2022</b></span>
+                </div>
                 <p class="mb-0" align="left" style="color:black">
-                    <a href="https://www.fsvadodara.org/" target="_blank"><b>Friends Society</b></a> -
-                    Volunteer (December 2021 - July 2023)<br>
-                    Participated in blood donation camps, conducted door-to-door awareness campaigns, and contributed to
-                    Sunday schooling programs for underprivileged kids
-                    <br>
+                    <a href="https://zerointegration.com" target="_blank" style="font-size: 1.1em; color: gray;">
+                        <b>Zero Integration Private Limited</b>
+                    </a>
                 </p>
+                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;">Developed a responsive web app for vaccination status tracking using JavaScript and Bootstrap.</li>
+                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em">Deployed a Django server with Oracle XE database and set up secure Google authentication.</li>
+                </ul>
+                
+                <br>
+                <div style="text-align: left;"> 
+                    <a href="https://www.youtube.com/watch?v=IYvJw5xRmWI" target="_blank"
+                        class="btn btn-outline btn-rounded btn-quaternary btn-with-arrow mb-2">Internship Project
+                        Video<span><i class="fas fa-chevron-right"></i></span></a>
+                    <a href="https://zerointegration.com/internship/vaccisafe" target="_blank"
+                        class="btn btn-outline btn-rounded btn-quaternary btn-with-arrow mb-2" style="margin-left: 10px;">Blog<span><i
+                        class="fas fa-chevron-right"></i></span></a>
+                </div>
+            </div>
+        </section> -->
+        <br>
+        <h4 style="font-size: 2.2em;">Education & Courses</h4>
+        <section class="timeline custom-timeline" id="timeline">
+            <div class="timeline-body">
+
+                <article class="timeline-box right custom-box-shadow-2">
+                    <div class="timeline-box-arrow"></div>
+                    <!-- <div class="row"> -->
+                        
+                        <div style="padding: 2%">
+                            <div class="call-to-action-content">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <a href="javascript:void(0);" target="_blank" style="margin-left: 1%; pointer-events: none; font-size: 1.6em;"><b>University of Maryland</b></a>
+                                    <span style="font-size: 1.3em; color: gray; font-weight: 600;">Expected May 2027</span>
+                                </div>
+                                <p class="mb-0" align="left" style="color:black">
+                                    <a href="https://www.the-lavender-lab.com/" target="_blank" style="font-size: 1.3em; color: gray; font-weight: 600; margin-left: 1%">
+                                        College Park, MD
+                                    </a>
+                                </p>
+                                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                                    <li style="margin-top: 0.5em; margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                        Pursuing Bachelor of Science in Computer Science
+                                    </li>
+                                    <li style="margin-top: 0.5em; margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                        Honors: CMNS' Spring 2024 Dean's list
+                                    </li>
+                                    <li style="margin-top: 0.5em; margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                        GPA: 4.0/4.0
+                                    </li>
+                                    <li style="margin-top: 0.5em; margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                        Treasuer for Club Cricket
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </article>
+
+
+                <article class="timeline-box right custom-box-shadow-2">
+                    <div class="timeline-box-arrow"></div>
+                    <!-- <div class="row"> -->
+                        
+                        <div style="padding: 2%">
+                            <div class="call-to-action-content">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <a href="javascript:void(0);" target="_blank" style="margin-left: 1%; pointer-events: none; font-size: 1.6em;"><b>Big Data, Machine Learning and their Real-World Applications</b></a>
+                                    <span style="font-size: 1.3em; color: gray; font-weight: 600;">July 2022</span>
+                                </div>
+                                <p class="mb-0" align="left" style="color:black">
+                                    <a href="javascript:void(0);" target="_blank" style="font-size: 1.3em; color: gray; font-weight: 600; pointer-events: none; margin-left: 1%">
+                                        Columbia University’s Summer Immersion Program
+                                    </a>
+                                </p>
+                                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                                    <li style="margin-top: 0.5em; margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                        Introduction to <b>big data</b>, <b>AI</b>, <b>IoT</b>, <b>cloud computing</b>, and <b>data ethics</b> within real-world business scenarios.
+                                    </li>
+                                    <li style="margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                        Hands-on projects involving <b>data harvesting</b>, <b>exploration</b>, <b>visualization</b>, <b>manipulation</b>, and <b>transformation</b>.
+                                    </li>
+                                    <li style="margin-bottom: 0.4em; text-indent: -1.5em; padding-left: 1.5em;">
+                                        Studied <b>statistical frameworks</b> and methods to extract insights from data; implemented and evaluated common <b>machine-learning techniques</b> like <b>Linear Regression</b>, <b>Decision Trees</b>, <b>Random Forest</b>, <b>Support Vector Machines</b>, <b>K-Nearest Neighbors</b>, <b>Naive Bayes</b>, <b>Gradient Boosting</b> and <b>XGBoost</b>.
+                                    </li>
+                                    
+                                </ul>
+                                <div style="text-align: left; margin-left: 16px;"> 
+                                    <a href="https://devanujpatel.github.io/website/imgdev/Columbia_Evaluation.pdf" target="_blank"
+                                        class="btn btn-outline btn-rounded btn-primary btn-with-arrow mb-2">Evaluation Letter<span><i class="fas fa-chevron-right"></i></span></a>
+                                    <a href="https://devanujpatel.github.io/website/imgdev/Columbia_Participation.pdf" target="_blank"
+                                        class="btn btn-outline btn-rounded btn-primary btn-with-arrow mb-2" style="margin-left: 10px;">Certificate<span><i
+                                        class="fas fa-chevron-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                </article>
+
+                <article class="timeline-box right custom-box-shadow-2">
+                    <div class="timeline-box-arrow"></div>
+                    <!-- <div class="row"> -->
+                        
+                        <div style="padding: 2%">
+                            <div class="call-to-action-content">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <a href="javascript:void(0);" target="_blank" style="margin-left: 1%; pointer-events: none; font-size: 1.6em;"><b>CS50’s Introduction to Artificial Intelligence with Python</b></a>
+                                    <span style="font-size: 1.3em; color: gray; font-weight: 600;">Apr. - May 2023</span>
+                                </div>
+                                <p class="mb-0" align="left" style="color:black">
+                                    <a href="javascript:void(0);" target="_blank" style="font-size: 1.3em; color: gray; font-weight: 600; pointer-events: none; margin-left: 1%">
+                                        HarvardX: an Online Learning Initiative by Harvard University
+                                    </a>
+                                </p>
+                                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;">
+                                        Designed and deployed <b>AI models</b> using <b>Python</b>, <b>TensorFlow</b>, and <b>scikit-learn</b>, covering <b>search algorithms</b>, <b>neural networks</b>, <b>machine learning</b>, and <b>natural language processing</b>.
+                                    </li>
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;">
+                                        Developed practical applications such as <b>game-playing agents</b>, <b>handwriting recognition</b>, and <b>sentiment analysis</b>.
+                                    </li>
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em;">
+                                        Mastered core <b>AI concepts</b> including <b>optimization</b>, <b>supervised/unsupervised learning</b>, <b>neural network architecture</b>, and <b>large language models</b>, with a focus on <b>ethical AI practices</b>.
+                                    </li>                                    
+                                    
+                                </ul>
+                                
+                                <br>
+                                <div style="text-align: left; margin-left: 16px;"> 
+                                    <a href="https://courses.edx.org/certificates/2861d1fba3cf4252aac596c2fecd74b6" target="_blank"
+                                        class="btn btn-outline btn-rounded btn-primary btn-with-arrow mb-2" style="margin-left: 10px;">Certificate<span><i
+                                        class="fas fa-chevron-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                </article>
+
+                <article class="timeline-box right custom-box-shadow-2">
+                    <div class="timeline-box-arrow"></div>
+                    <!-- <div class="row"> -->
+                        
+                        <div style="padding: 2%">
+                            <div class="call-to-action-content">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <a href="javascript:void(0);" target="_blank" style="margin-left: 1%; pointer-events: none; font-size: 1.6em;"><b>CS50’s Web Programming with Python and JavaScript</b></a>
+                                    <span style="font-size: 1.3em; color: gray; font-weight: 600;">May 2022</span>
+                                </div>
+                                <p class="mb-0" align="left" style="color:black">
+                                    <a href="javascript:void(0);" target="_blank" style="font-size: 1.3em; color: gray; font-weight: 600; pointer-events: none; margin-left: 1%">
+                                        HarvardX: an Online Learning Initiative by Harvard University
+                                    </a>
+                                </p>
+                                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;">
+                                        Gained hands-on experience in designing and implementing <b>full-stack web applications</b> using <b>Python</b>, <b>JavaScript</b>, and <b>SQL</b> with frameworks like <b>Django</b>, <b>React</b>, and <b>Bootstrap</b>.
+                                    </li>
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;">
+                                        Acquired in-depth knowledge of <b>database design</b>, <b>scalability</b>, <b>security</b>, and <b>user experience</b>, enabling the creation of robust and user-friendly web applications.
+                                    </li>
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em;">
+                                        Developed web apps like <b>Google Search Clone</b>, <b>Wikipedia Clone</b>, and <b>Live Auction Website</b>.
+                                    </li>                                    
+                                </ul>
+                                <div style="text-align: left; margin-left: 16px;"> 
+                                    <a href="https://youtu.be/00Juvd781sk" target="_blank"
+                                        class="btn btn-outline btn-rounded btn-primary btn-with-arrow mb-2">Capstone Project Demo<span><i class="fas fa-chevron-right"></i></span></a>
+                                    <a href="https://courses.edx.org/certificates/dcfd5b7fc0334d0fb6ac4e2b98e6752a" target="_blank"
+                                        class="btn btn-outline btn-rounded btn-primary btn-with-arrow mb-2" style="margin-left: 10px;">Certificate<span><i
+                                        class="fas fa-chevron-right"></i></span></a>
+                                </div>
+                                
+                                <br>
+                            </div>
+                        </div>
+                </article>
+
+                <article class="timeline-box right custom-box-shadow-2">
+                    <div class="timeline-box-arrow"></div>
+                    <!-- <div class="row"> -->
+                        
+                        <div style="padding: 2%">
+                            <div class="call-to-action-content">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <a href="javascript:void(0);" target="_blank" style="margin-left: 1%; pointer-events: none; font-size: 1.6em;"><b>CS50’s Introduction to Computer Science</b></a>
+                                    <span style="font-size: 1.3em; color: gray; font-weight: 600;">Nov. 2021 - Jan 2022</span>
+                                </div>
+                                <p class="mb-0" align="left" style="color:black">
+                                    <a href="javascript:void(0);" target="_blank" style="font-size: 1.3em; color: gray; font-weight: 600; pointer-events: none; margin-left: 1%">
+                                        HarvardX: an Online Learning Initiative by Harvard University
+                                    </a>
+                                </p>
+                                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;">
+                                        Mastered core concepts in computer science, including <b>algorithms</b>, <b>data structures</b>, and software engineering, through <b>hands-on problem sets and projects</b>.
+                                    </li>
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;">
+                                        Developed programming skills across multiple languages, including <b>C</b>, <b>Python</b>, <b>SQL</b>, <b>HTML</b>, <b>CSS</b>, and <b>JavaScript</b>.
+                                    </li>
+                                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em;">
+                                        Cultivated the ability to <b>think algorithmically</b> and solve complex problems efficiently, building a strong foundation for further exploration in computer science.
+                                    </li>
+                                </ul>
+                                
+                                <br>
+                                <div style="text-align: left; margin-left: 16px;"> 
+                                    <a href="https://www.youtube.com/watch?v=-OOddHHJg2E" target="_blank"
+                                        class="btn btn-outline btn-rounded btn-primary btn-with-arrow mb-2">Capstone Project Demo<span><i class="fas fa-chevron-right"></i></span></a>
+                                    <a href="https://courses.edx.org/certificates/3eab7d7a582241da8d6051ea9d979646" target="_blank"
+                                        class="btn btn-outline btn-rounded btn-primary btn-with-arrow mb-2" style="margin-left: 10px;">Certificate<span><i
+                                        class="fas fa-chevron-right"></i></span></a>
+                                </div>
+                            </div>
+                        </div>
+                </article>
             </div>
         </section>
 
-        <h4>Courses & Education</h4>
+        <br>
+        <h4 style="font-size: 2.2em;">Leadership</h4>
+        <section class="call-to-action featured featured-quaternary mb-5">
+            <div class="call-to-action-content">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <a href="https://www.fsvadodara.org/" target="_blank" style="margin: 0; font-size: 1.7em;"><b>Treasuer of Club Cricket</b></a>
+                    <span style="font-size: 1.4em; color: gray;"><b>Jan. 2024 - Present</b></span>
+                </div>
+                
+                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;">
+                        <b>Managing $10,000 budget</b> and tracking <b>all financial transactions</b> for tournaments, tours, and practice equipment.
+                    </li>
+                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em;">
+                        Designed and executed fundraising strategies, <b>increasing funds by 30%</b>.
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+        <section class="call-to-action featured featured-quaternary mb-5">
+            <div class="call-to-action-content">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <a href="https://www.fsvadodara.org/" target="_blank" style="margin: 0; font-size: 1.7em;"><b>Student Council President</b></a>
+                    <span style="font-size: 1.4em; color: gray;"><b>December 2021 - July 2023</b></span>
+                </div>
+                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;">
+                        Led <b>diverse teams</b> of students to successfully <b>plan and execute 15 school-wide events</b>.
+                    </li>
+                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em;">
+                        Facilitated <b>communication</b> between students and administration, helping to address concerns and <b>represent student perspectives</b>.
+                    </li>
+                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em;">
+                        Worked on improving the school environment by <b>addressing student issues and suggesting practical solutions</b>.
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+
+ 
+        <br>
+        <h4 style="font-size: 2.2em;">Volunteering</h4>
+        <section class="call-to-action featured featured-quaternary mb-5">
+            <div class="call-to-action-content">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <a href="https://www.fsvadodara.org/" target="_blank" style="margin: 0; font-size: 1.7em;"><b>Friends Society</b></a>
+                    <span style="font-size: 1.4em; color: gray;"><b>December 2021 - July 2023</b></span>
+                </div>
+                <ul style="list-style-position: inside; text-align: left; font-size: 1.35em;">
+                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em; margin-top: 0.5em;">
+                        Participated in <b>blood donation camps</b> and conducted <b>door-to-door awareness campaigns</b>.
+                    </li>
+                    <li style="margin-bottom: 0.3em; text-indent: -1.5em; padding-left: 1.5em;">
+                        Contributed to <b>Sunday schooling programs</b> for <b>underprivileged kids</b>, helping with <b>essential educational resources</b> and <b>mentorship</b>.
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>
+
+        <!-- <h4>Courses & Education</h4>
 
         <section class="call-to-action featured featured-primary mb-5">
             <div class="call-to-action-content">
@@ -371,8 +1279,8 @@
                             class="fas fa-chevron-right"></i></span></a>
                 </p>
             </div>
-        </section>
-        <section class="call-to-action featured featured-tertiary mb-5">
+        </section> -->
+        <!-- <section class="call-to-action featured featured-tertiary mb-5">
             <div class="call-to-action-content">
                 <p class="mb-0" align="left" style="color:black">
                     <b>Built a Drone</b> (May 2019 - Jul 2019)<br>
@@ -401,9 +1309,7 @@
             </div>
         </section>
 
-    </div>
-
-
+    </div> -->
     <!-- Bottom Carousel Stuff from here onwards -->
 
     <div class="container">
