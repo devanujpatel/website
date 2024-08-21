@@ -3540,18 +3540,25 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 	position: relative;
 	border: none;
 	perspective: 1000px;
+	width: 60%;
+}
+
+.flip-card-2 {
+	position: relative;
+	border: none;
+	perspective: 1000px;
+	width: 140%;
 }
 
 .flip-card .flip-front,
 .flip-card .flip-back {
-	padding: 32px;
-	padding: 2rem;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
 	background: #FFF;
 	box-shadow: 0px 0px 44px -10px rgba(0, 0, 0, 0.15);
 	transform-style: preserve-3d;
 	transition: ease transform 500ms;
+	padding: 32px;
 }
 
 .flip-card .flip-front .flip-content,
@@ -3605,10 +3612,91 @@ html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span
 	transform: translate3d(0, 0, 1px) rotateX(0deg);
 }
 
-.flip-card.flip-card-3d .flip-front .flip-content, .flip-card.flip-card-3d .flip-back .flip-content {
+.flip-card.flip-card-3d .flip-front .flip-content,
+.flip-card.flip-card-3d .flip-back .flip-content {
 	perspective: inherit;
 	transform: translate3d(0, 0, 60px);
 }
+
+/* Responsive styles */
+@media (max-width: 767px) {
+	.flip-card {
+		perspective: 800px;
+		width: 100%; /* Use the full screen width */
+		height: auto; /* Auto height to fit content */
+	}
+
+	.flip-card .flip-front,
+	.flip-card .flip-back {
+		padding: 20px;
+		box-shadow: 0px 0px 30px -8px rgba(0, 0, 0, 0.15);
+		height: auto; /* Auto height to fit content */
+		min-height: 300px; /* Set a minimum height */
+	}
+
+	.flip-card .flip-front .flip-content,
+	.flip-card .flip-back .flip-content {
+		transform: translate3d(0, 0, 30px);
+	}
+
+	.flip-card.flip-card-3d .flip-front .flip-content,
+	.flip-card.flip-card-3d .flip-back .flip-content {
+		transform: translate3d(0, 0, 30px);
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.flip-card {
+		perspective: 900px;
+		width: 90%; /* Use most of the screen width */
+		height: auto;
+	}
+
+	.flip-card .flip-front,
+	.flip-card .flip-back {
+		padding: 28px;
+		box-shadow: 0px 0px 36px -9px rgba(0, 0, 0, 0.15);
+		height: auto;
+		min-height: 350px; /* Set a minimum height */
+	}
+
+	.flip-card .flip-front .flip-content,
+	.flip-card .flip-back .flip-content {
+		transform: translate3d(0, 0, 45px);
+	}
+
+	.flip-card.flip-card-3d .flip-front .flip-content,
+	.flip-card.flip-card-3d .flip-back .flip-content {
+		transform: translate3d(0, 0, 45px);
+	}
+}
+
+@media (min-width: 992px) {
+	.flip-card {
+		perspective: 1000px;
+		width: 60%;
+		height: auto;
+	}
+
+	.flip-card .flip-front,
+	.flip-card .flip-back {
+		padding: 32px;
+		box-shadow: 0px 0px 44px -10px rgba(0, 0, 0, 0.15);
+		height: auto;
+		min-height: 400px; /* Set a minimum height */
+	}
+
+	.flip-card .flip-front .flip-content,
+	.flip-card .flip-back .flip-content {
+		transform: translate3d(0, 0, 60px);
+	}
+
+	.flip-card.flip-card-3d .flip-front .flip-content,
+	.flip-card.flip-card-3d .flip-back . flip-content {
+		transform: translate3d(0, 0, 60px);
+	}
+}
+
 
 /* Owl Carousel */
 .owl-carousel {
@@ -17987,11 +18075,12 @@ section.timeline {
 
 section.timeline:before {
 	background: #505050;
-	background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%);
+	/* background: linear-gradient(to bottom, rgba(80, 80, 80, 0) 0%, #505050 8%, #505050 92%, rgba(80, 80, 80, 0) 100%); */
+	background: linear-gradient(to bottom, rgba(50, 50, 50, 0) 0%, #323232 8%, #323232 92%, rgba(50, 50, 50, 0) 100%);
 	content: "";
 	display: block;
 	height: 100%;
-	left: 50%;
+	left: 5%;
 	margin-left: -2px;
 	position: absolute;
 	top: -60px;
@@ -18062,7 +18151,7 @@ section.timeline .timeline-box {
 	border-radius: 4px;
 	margin: 20px 10px 10px 10px;
 	padding: 10px;
-	width: 45.7%;
+	width: 90%;
 	float: left;
 	z-index: 1;
 	margin-bottom: 30px;
@@ -18082,7 +18171,7 @@ section.timeline .timeline-box.left:before {
 	height: 7px;
 	margin-right: -5px;
 	position: absolute;
-	left: 50%;
+	left: 5%;
 	margin-top: 22px;
 	width: 8px;
 	transform: translate3d(-50%, 0, 0);
@@ -18119,7 +18208,7 @@ section.timeline .timeline-box.right:before {
 	display: block;
 	height: 7px;
 	position: absolute;
-	left: 50%;
+	left: 5%;
 	margin-top: 32px;
 	width: 8px;
 	transform: translate3d(-50%, 0, 0);
@@ -18165,7 +18254,7 @@ section.timeline .timeline-box .owl-carousel {
 		right: auto;
 		left: auto;
 		margin: 25px auto;
-		max-width: 70%;
+		max-width: 80%;
 		width: auto;
 	}
 
@@ -18196,7 +18285,7 @@ section.timeline .timeline-box .owl-carousel {
 
 	section.timeline .timeline-box.right {
 		margin: 15px auto;
-		max-width: 90%;
+		max-width: 80%;
 	}
 
 	article.post-large {
