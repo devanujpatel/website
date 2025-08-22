@@ -15866,12 +15866,18 @@ html.boxed .slider-container {
 }
 
 .sort-destination.full-width {
-	position: relative;
+	/* position: relative;
+	justify-content: center;
+} */
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centers the items horizontally */
 }
 
 .sort-destination.full-width .isotope-item {
 	width: 20%;
 	float: left;
+	margin: 0.3%;
 }
 
 .sort-destination.full-width .isotope-item.w2 {
